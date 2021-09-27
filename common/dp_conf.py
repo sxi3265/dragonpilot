@@ -17,8 +17,8 @@ confs = [
   {'name': 'dp_thermal_overheat', 'default': False, 'type': 'Bool', 'conf_type': ['struct']},
 
   # custom api server
-  {'name': 'dp_api_custom', 'default': False, 'type': 'Bool', 'conf_type': ['param']},
-  {'name': 'dp_api_custom_url', 'default': 'https://api.retropilot.org', 'type': 'Text', 'depends': [{'name': 'dp_api_custom', 'vals': [True]}], 'conf_type': ['param']},
+  {'name': 'dp_api_custom', 'default': True, 'type': 'Bool', 'conf_type': ['param']},
+  {'name': 'dp_api_custom_url', 'default': 'https://retropilot.easynow.me', 'type': 'Text', 'depends': [{'name': 'dp_api_custom', 'vals': [True]}], 'conf_type': ['param']},
 
   {'name': 'dp_atl', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct'], 'update_once': True},
   {'name': 'dp_atl_op_long', 'default': False, 'type': 'Bool', 'depends': [{'name': 'dp_atl', 'vals': [True]}], 'conf_type': ['param', 'struct'], 'update_once': True},
